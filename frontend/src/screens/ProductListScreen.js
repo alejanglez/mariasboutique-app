@@ -73,11 +73,11 @@ export default function ProductListScreen(props) {
           <thead>
             <tr>
               <th>ID</th>
-              <th>NAME</th>
-              <th>PRICE</th>
-              <th>CATEGORY</th>
-              <th>BRAND</th>
-              <th>ACTIONS</th>
+              <th>NOME</th>
+              <th>PREÇO</th>
+              <th>CATEGORIA</th>
+              <th>MARCA</th>
+              <th>AÇÕES</th>
             </tr>
           </thead>
           <tbody>
@@ -96,14 +96,14 @@ export default function ProductListScreen(props) {
                       props.history.push(`/product/${product._id}/edit`)
                     }
                   >
-                    Edit
+                    Editar
                   </button>
                   <button
                     type="button"
                     className="small"
                     onClick={() => deleteHandler(product)}
                   >
-                    Delete
+                    Apagar
                   </button>
                 </td>
               </tr>

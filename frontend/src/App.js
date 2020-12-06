@@ -76,13 +76,13 @@ function App() {
                     <Link to="/dashboard">Dashboard</Link>
                   </li>
                   <li>
-                    <Link to="/productlist">Products</Link>
+                    <Link to="/productlist">Produtos</Link>
                   </li>
                   <li>
-                    <Link to="/orderlist">Orders</Link>
+                    <Link to="/orderlist">Encomendas</Link>
                   </li>
                   <li>
-                    <Link to="/userlist">Users</Link>
+                    <Link to="/userlist">Utilizadores</Link>
                   </li>
                 </ul>
               </div>
@@ -118,7 +118,7 @@ function App() {
         ></AdminRoute>
         <Route path="/" component={HomeScreen} exact></Route>    
         </main>	      
-        <footer className="row center">All right reserved</footer>	    	    
+        <footer className="row center">Todos os Direitos Reservados</footer>	    	    
       </div>
     </BrowserRouter>            
   )

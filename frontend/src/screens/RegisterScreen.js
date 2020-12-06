@@ -36,12 +36,12 @@ export default function RegisterScreen(props) {
     <div>
       <form className="form" onSubmit={submitHandler}>
         <div>
-          <h1>Create Account</h1>
+          <h1>Criar Conta</h1>
         </div>
         {loading && <LoadingBox></LoadingBox>}
         {error && <MessageBox variant="danger">{error}</MessageBox>}
         <div>
-          <label htmlFor="name">Name</label>
+          <label htmlFor="name">Nome</label>
           <input
             type="text"
             id="name"
@@ -51,7 +51,7 @@ export default function RegisterScreen(props) {
           ></input>
         </div>
         <div>
-          <label htmlFor="email">Email address</label>
+          <label htmlFor="email">Endereço de Email</label>
           <input
             type="email"
             id="email"
@@ -71,7 +71,7 @@ export default function RegisterScreen(props) {
           ></input>
         </div>
         <div>
-          <label htmlFor="confirmPassword">Confirm Password</label>
+          <label htmlFor="confirmPassword">Confirmar Password</label>
           <input
             type="password"
             id="confirmPassword"
@@ -83,14 +83,14 @@ export default function RegisterScreen(props) {
         <div>
           <label />
           <button className="primary" type="submit">
-            Register
+            Registar
           </button>
         </div>
         <div>
           <label />
           <div>
-            Already have an account?{' '}
-            <Link to={`/signin?redirect=${redirect}`}>Sign-In</Link>
+            Conta já criada?{' '}
+            <Link to={`/signin?redirect=${redirect}`}>Entrar</Link>
           </div>
         </div>
       </form>
