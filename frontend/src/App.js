@@ -51,7 +51,7 @@ function App() {
                 </Link>
                 <ul className="dropdown-content">
                   <li>
-                      <Link to="/profile">User Profile</Link>
+                      <Link to="/profile">Perfil de Utilizador</Link>
                   </li>
                   <li>
                     <Link to="/orderhistory">Histórico</Link>
