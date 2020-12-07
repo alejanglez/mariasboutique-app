@@ -10,9 +10,9 @@ export default function ProfileScreen() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
-    const [sellerName, setSellerName] = useState('');
+    /*const [sellerName, setSellerName] = useState('');
     const [sellerLogo, setSellerLogo] = useState('');
-    const [sellerDescription, setSellerDescription] = useState('');
+    const [sellerDescription, setSellerDescription] = useState('');*/
 
     const userSignin = useSelector((state) => state.userSignin);
     const { userInfo } = userSignin;
@@ -32,11 +32,11 @@ export default function ProfileScreen() {
         }else{
             setName(user.name);
             setEmail(user.email);
-        if (user.seller) {
+      /*  if (user.seller) {
             setSellerName(user.seller.name);
             setSellerLogo(user.seller.logo);
             setSellerDescription(user.seller.description);
-        }
+        }*/
         }
     }, [dispatch, userInfo._id, user]);
     const submitHandler = (e) => {
@@ -45,7 +45,7 @@ export default function ProfileScreen() {
         if (password !== confirmPassword) {
             alert('Password and Confirm Password Are Not Matched');
         } else {
-            dispatch(
+          /*  dispatch(
                 updateUserProfile({
                     userId: user._id,
                     name,
@@ -55,7 +55,8 @@ export default function ProfileScreen() {
                     sellerLogo,
                     sellerDescription,
                 })
-            );
+            );*/
+            dispatch(updateUserProfile({ userId: user._id, name, email, password }));
         }    
     };
     return (
@@ -116,7 +117,7 @@ export default function ProfileScreen() {
                     onChange={(e) => setConfirmPassword(e.target.value)}
                 ></input>
                 </div>
-                {user.isSeller && (
+              {/*  {user.isSeller && (
               <>
                 <h2>Seller</h2>
                 <div>
@@ -150,7 +151,7 @@ export default function ProfileScreen() {
                   ></input>
                 </div>
               </>
-            )}
+            )}*/}
                 <div>
                 <label />
                 <button className="primary" type="submit">
