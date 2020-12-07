@@ -52,7 +52,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #ff8000;
+  color: #52307c;
 }
 ul {
   padding: 0;
@@ -85,7 +85,7 @@ button:hover {
   border: 0.1rem #404040 solid;
 }
 button.primary {
-  background-color: #f0c040;
+  background-color: #52307c;
 }
 button.block {
   width: 100%;
@@ -98,7 +98,9 @@ header a {
   color: #ffffff;
   padding: 1rem;
 }
+@import url(https://fonts.googleapis.com/css?family=Sacramento:regular);
 a.brand {
+  font-family:Sacramento;
   color: #ffffff;
   font-size: 3rem;
   font-weight: bold;
@@ -175,7 +177,7 @@ img.large {
 }
 /* Rating */
 .rating span {
-  color: #f0c040;
+  color:#52307c;
   margin: 0.1rem;
 }
 .rating span:last-child {
@@ -250,8 +252,8 @@ img.large {
   font-weight: bold;
 }
 .checkout-steps > div.active {
-  border-top-color: #f08000;
-  color: #f08000;
+  border-top-color:#52307c;
+  color: #52307c;
 }
 /* Table */
 .table {
