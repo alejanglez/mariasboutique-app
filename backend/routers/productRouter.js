@@ -9,8 +9,20 @@ const productRouter = express.Router();
 productRouter.get(
   '/',
   expressAsyncHandler(async (req, res) => {
-    const products = await Product.find({});
+    const category = req.query.category || '';
+    const categoryFilter = category ? { category } : {};
+    const products = await Product.find({
+      ...categoryFilter,  
+    });
     res.send(products);
+  })
+);
+
+productRouter.get(
+  '/categories',
+  expressAsyncHandler(async (req, res) => {
+    const categories = await Product.find().distinct('category');
+    res.send(categories);
   })
 );
 
