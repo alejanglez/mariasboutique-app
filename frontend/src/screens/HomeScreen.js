@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Carousel } from 'react-responsive-carousel';
 import Product from '../components/Product';
 import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
@@ -18,6 +20,17 @@ export default function HomeScreen() {
     
   return (
     <div>
+    <Carousel showArrows autoPlay showThumbs={false}>
+      <div>
+        <img src="https://res.cloudinary.com/dylut4r4t/image/upload/v1607368038/maria%27s%20boutique/www-hey-beauti-com-HjccMRFwqv0-unsplash_jtcoyv.jpg" alt="pic1"/>
+      </div>
+      <div>
+        <img src="https://res.cloudinary.com/dylut4r4t/image/upload/v1607368036/maria%27s%20boutique/freestocks-_3Q3tsJ01nc-unsplash_yda2bw.jpg" alt="pic2"/>
+      </div>
+      <div>
+        <img src="https://res.cloudinary.com/dylut4r4t/image/upload/v1607368034/maria%27s%20boutique/tamara-bellis-IwVRO3TLjLc-unsplash_fduqbq.jpg" alt="pic3"/>
+      </div> 
+    </Carousel>
     {loading ? (
         <LoadingBox></LoadingBox>
     ) : error ? (
