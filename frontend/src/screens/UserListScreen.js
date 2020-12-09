@@ -45,11 +45,11 @@ export default function UserListScreen(props) {
           <thead>
             <tr>
               <th>ID</th>
-              <th>NAME</th>
+              <th>NOME</th>
               <th>EMAIL</th>
-              <th>IS SELLER</th>
-              <th>IS ADMIN</th>
-              <th>ACTIONS</th>
+              <th>É VENDEDOR</th>
+              <th>É ADMIN</th>
+              <th>AÇÕES</th>
             </tr>
           </thead>
           <tbody>
