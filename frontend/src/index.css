@@ -96,13 +96,13 @@ button.small {
 }
 /* Header */
 header a {
-  color: #ffffff;
+  color: #52307c;
   padding: 1rem;
 }
 @import url(https://fonts.googleapis.com/css?family=Sacramento:regular);
 a.brand {
   font-family:Sacramento;
-  color: #ffffff;
+  color: #52307c;
   font-size: 3rem;
   font-weight: bold;
 }

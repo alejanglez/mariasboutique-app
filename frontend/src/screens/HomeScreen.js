@@ -22,13 +22,13 @@ export default function HomeScreen() {
     <div>
     <Carousel showArrows autoPlay showThumbs={false}>
       <div>
-        <img src="https://res.cloudinary.com/dylut4r4t/image/upload/v1607368038/maria%27s%20boutique/www-hey-beauti-com-HjccMRFwqv0-unsplash_jtcoyv.jpg" alt="pic1"/>
+        <img src="https://res.cloudinary.com/dylut4r4t/image/upload/v1607512582/maria%27s%20boutique/freestocks-_3Q3tsJ01nc-unsplash_af7ti5.jpg" alt="pic1"/>
       </div>
       <div>
-        <img src="https://res.cloudinary.com/dylut4r4t/image/upload/v1607368036/maria%27s%20boutique/freestocks-_3Q3tsJ01nc-unsplash_yda2bw.jpg" alt="pic2"/>
+        <img src="https://res.cloudinary.com/dylut4r4t/image/upload/v1607513469/maria%27s%20boutique/tamara-bellis-IwVRO3TLjLc-unsplash_hcelpz.jpg" alt="pic2"/>
       </div>
       <div>
-        <img src="https://res.cloudinary.com/dylut4r4t/image/upload/v1607368034/maria%27s%20boutique/tamara-bellis-IwVRO3TLjLc-unsplash_fduqbq.jpg" alt="pic3"/>
+        <img src="https://res.cloudinary.com/dylut4r4t/image/upload/v1607513466/maria%27s%20boutique/www-hey-beauti-com-HjccMRFwqv0-unsplash_mxhubi.jpg" alt="pic3"/>
       </div> 
     </Carousel>
     {loading ? (
