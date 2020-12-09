@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Sacramento:regular);
 html {
   font-size: 62.5%; /* 16px x 62.5 = 10px = 1rem */
   box-sizing: border-box;
@@ -99,12 +100,21 @@ header a {
   color: #52307c;
   padding: 1rem;
 }
-@import url(https://fonts.googleapis.com/css?family=Sacramento:regular);
-a.brand {
-  font-family:Sacramento;
-  color: #52307c;
-  font-size: 3vw;
-  font-weight: bold;
+@media screen and (min-width: 601px){
+  a.brand {
+    font-family:Sacramento;
+    color: #52307c;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 600px){
+  a.brand {
+    font-family:Sacramento;
+    color: #52307c;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
 }
 .badge {
   background-color: #f02020;
