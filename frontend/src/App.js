@@ -156,7 +156,7 @@ function App() {
                   </div>
                 </div>
               </div>
-    
+              <p className="footer-bottom-text">Todos os direitos reservados</p>
         </footer>	    	    
       </div>
     </BrowserRouter>            

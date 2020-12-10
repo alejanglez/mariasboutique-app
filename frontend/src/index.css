@@ -35,12 +35,12 @@ main {
   padding: 1rem;
 }
 /*footer*/
-footer {
+/*footer {
   grid-area: footer;
   color: #52307c;
-}
+}*/
 footer p {
-  color: #52307c;
+  color:#52307c;
   line-height:25px;
 }
 footer h2,h3{
@@ -69,6 +69,35 @@ footer h2{
   margin: 0;
   padding: 0;
   list-style: none;
+}
+.segment-two ul li{
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+.segment-three h2{
+  color: #fff;
+  text-transform: uppercase;
+}
+.segment-three h2:before{
+  content: '|';
+  color: #d896ff;
+  padding-right: 10px;
+}
+.segment-three Link{
+  background:#52307c;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+}
+.segment-three Link i{
+  font-size: 20px;
+  color: #fff;
+  padding: 10px 12px;
+}
+.footer-bottom-text{
+  text-align: center;
+  background: #eeeeee;
+  line-height: 75px;
 }
 
 /* Common */
