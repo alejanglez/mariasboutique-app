@@ -5,6 +5,9 @@ import { detailsProduct } from '../actions/productActions';
 import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
 import Rating from '../components/Rating';
+import { FacebookButton }  from "react-social";
+import { IconContext } from "react-icons";
+import {RiFacebookBoxFill} from "react-icons/ri";
 
 export default function ProductScreen(props) {
   const dispatch = useDispatch();
@@ -19,6 +22,7 @@ export default function ProductScreen(props) {
   const addToCartHandler = () => {
     props.history.push(`/cart/${productId}?qty=${qty}`);
   };
+
   return (
     <div>
       {loading ? (
@@ -47,6 +51,13 @@ export default function ProductScreen(props) {
               <li>
                 Descrição:
                 <p>{product.description}</p>
+              </li>
+              <li>
+                <IconContext.Provider value={{color: "white", size: "2em"}}>
+                <FacebookButton url={`https://mariasboutique-app.herokuapp.com/product/${productId}`} appId={813845855828242} className="faceButton">
+                  <RiFacebookBoxFill/>
+                </FacebookButton>
+                </IconContext.Provider>
               </li>
             </ul>
           </div>
