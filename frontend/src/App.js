@@ -129,7 +129,35 @@ function App() {
               
         <Route path="/" component={HomeScreen} exact></Route>    
         </main>	      
-        <footer className="row center">Todos os Direitos Reservados</footer>	    	    
+        <footer className="footer-top">
+              <div className="container">
+                <div className="row">
+                  <div className="col-md-3 col-sm-6 col-xs-12 segment-one">
+                    <h3>Divinector</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                  </div>
+                  <div className="col-md-3 col-sm-6 col-xs-12 segment-two">
+                    <h2>Divinector</h2>
+                    <ul>
+                      <li><Link to="/"></Link>Event</li>
+                      <li><Link to="/"></Link>Support</li>
+                      <li><Link to="/"></Link>Hosting</li>
+                      <li><Link to="/"></Link>Carrer</li>
+                      <li><Link to="/"></Link>Blog</li>
+                    </ul>
+                  </div>
+                  <div className="col-md-3 col-sm-6 col-xs-12 segment-three">
+                    <h2> Follow Us</h2>
+                      <p>Segue-nos no Facebbok para estares a par das novidades.</p>
+                      <Link to="https://www.facebook.com/Marias-Boutique-1961138343971954"><i className="fa fa-facebook"></i></Link>
+                  </div>
+                </div>
+              </div>
+    
+        </footer>	    	    
       </div>
     </BrowserRouter>            
   )

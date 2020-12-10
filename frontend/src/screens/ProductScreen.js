@@ -55,7 +55,7 @@ export default function ProductScreen(props) {
               <li>
                 <IconContext.Provider value={{color: "white", size: "2em"}}>
                 <FacebookButton url={`https://mariasboutique-app.herokuapp.com/product/${productId}`} appId={813845855828242} className="faceButton">
-                  <RiFacebookBoxFill/>
+                  <RiFacebookBoxFill/> Share
                 </FacebookButton>
                 </IconContext.Provider>
               </li>

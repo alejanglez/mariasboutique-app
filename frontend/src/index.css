@@ -34,11 +34,43 @@ main {
   grid-area: main;
   padding: 1rem;
 }
+/*footer*/
 footer {
   grid-area: footer;
-  background-color: #eeeeee;
   color: #52307c;
 }
+footer p {
+  color: #52307c;
+  line-height:25px;
+}
+footer h2,h3{
+  color:#52307c;
+}
+footer h2{
+  font-size: 18px;
+}
+.footer-top{
+  background: #eeeeee;
+  padding: 80px 0;
+}
+.segment-one h3{
+  letter-spacing: 3px;
+  margin: 10px 0;
+}
+.segment-two h2{
+  text-transform: uppercase;
+}
+.segment-two h2:before{
+  content: '|';
+  color: #d896ff;
+  padding-right: 10px;
+}
+.segment-two ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 /* Common */
 h1 {
   font-size: 1.8rem;
