@@ -156,14 +156,7 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div className='footer-logo'>
-                <Link to='/' className='social-logo'>
-                  <img src="https://res.cloudinary.com/dylut4r4t/image/upload/v1609279083/react-images/Untitled_design_ox1t8i.png" alt="3dLogo"/>
-                </Link>
-              </div>
               <p className="footer-bottom-text">Todos os direitos reservados</p>
-              <div className='social-icons'>
-          </div>
         </footer>	    
       </div>
     </BrowserRouter>            
