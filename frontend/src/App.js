@@ -20,7 +20,6 @@ import ProductEditScreen from './screens/ProductEditScreen';
 import OrderListScreen from './screens/OrderListScreen';
 import UserListScreen from './screens/UserListScreen';
 import UserEditScreen from './screens/UserEditScreen';
-import Footer from './components/Footer/Footer';
 
 function App() {
   const cart = useSelector((state) => state.cart);
@@ -130,7 +129,7 @@ function App() {
               
         <Route path="/" component={HomeScreen} exact></Route>    
         </main>	      
-        {/*<footer className="footer-container">
+        <footer className="footer-container">
               <div className="container">
                 <div className="row">
                   <div className="col-md-3 col-sm-6 col-xs-12 segment-one">
@@ -158,8 +157,7 @@ function App() {
                 </div>
               </div>
               <p className="footer-bottom-text">Todos os direitos reservados</p>
-        </footer>*/}
-        <Footer/>	    	    
+        </footer>	    
       </div>
     </BrowserRouter>            
   )
