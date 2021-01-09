@@ -130,7 +130,7 @@ function App() {
         <Route path="/" component={HomeScreen} exact></Route>    
         </main>	      
         <footer className="footer-container">
-              <div className="container">
+              {/*<div className="container">
                 <div className="row">
                   <div className="col-md-3 col-sm-6 col-xs-12 segment-one">
                     <h3>Divinector</h3>
@@ -155,7 +155,7 @@ function App() {
                       <Link to="https://www.facebook.com/Marias-Boutique-1961138343971954"><i className="fa fa-facebook"></i></Link>
                   </div>
                 </div>
-              </div>
+              </div>*/}
               <p className="footer-bottom-text">Todos os direitos reservados</p>
         </footer>	    
       </div>
